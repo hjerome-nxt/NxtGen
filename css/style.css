@@ -1,6 +1,6 @@
 /* ============================================
    NxtGen Technologies — Global Stylesheet
-   Modern, clean design with dark theme
+   Modern, clean design with light theme
    ============================================ */
 
 /* --- Reset & Base --- */
@@ -11,34 +11,34 @@
 }
 
 :root {
-    --bg: #0a0a0f;
-    --bg-alt: #0f0f18;
-    --bg-card: #141420;
-    --bg-card-hover: #1a1a2e;
-    --surface: #1e1e30;
-    --border: #2a2a40;
-    --border-light: #3a3a55;
-    --text: #e8e8f0;
-    --text-muted: #9898b0;
-    --text-dim: #6a6a85;
-    --primary: #6366f1;
-    --primary-light: #818cf8;
-    --primary-dark: #4f46e5;
-    --accent: #06b6d4;
-    --accent-light: #22d3ee;
-    --green: #10b981;
-    --green-light: #34d399;
-    --amber: #f59e0b;
-    --rose: #f43f5e;
-    --gradient-1: linear-gradient(135deg, #6366f1, #06b6d4);
-    --gradient-2: linear-gradient(135deg, #6366f1, #a855f7);
-    --gradient-3: linear-gradient(135deg, #06b6d4, #10b981);
+    --bg: #ffffff;
+    --bg-alt: #f7f8fc;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f0f1f8;
+    --surface: #f0f1f8;
+    --border: #e2e4ef;
+    --border-light: #c8cbe0;
+    --text: #1e1e2e;
+    --text-muted: #5a5d78;
+    --text-dim: #8b8ea8;
+    --primary: #4f46e5;
+    --primary-light: #4f46e5;
+    --primary-dark: #4338ca;
+    --accent: #0891b2;
+    --accent-light: #0891b2;
+    --green: #059669;
+    --green-light: #059669;
+    --amber: #d97706;
+    --rose: #e11d48;
+    --gradient-1: linear-gradient(135deg, #4f46e5, #0891b2);
+    --gradient-2: linear-gradient(135deg, #4f46e5, #9333ea);
+    --gradient-3: linear-gradient(135deg, #0891b2, #059669);
     --radius: 12px;
     --radius-sm: 8px;
     --radius-lg: 20px;
     --radius-xl: 28px;
-    --shadow: 0 4px 24px rgba(0,0,0,0.3);
-    --shadow-lg: 0 12px 48px rgba(0,0,0,0.4);
+    --shadow: 0 4px 24px rgba(0,0,0,0.06);
+    --shadow-lg: 0 12px 48px rgba(0,0,0,0.08);
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-display: 'Space Grotesk', 'Inter', sans-serif;
@@ -60,13 +60,13 @@ body {
 }
 
 a {
-    color: var(--primary-light);
+    color: var(--primary);
     text-decoration: none;
     transition: color var(--transition);
 }
 
 a:hover {
-    color: var(--accent-light);
+    color: var(--accent);
 }
 
 img {
@@ -88,7 +88,7 @@ h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-weight: 700;
     line-height: 1.2;
-    color: #fff;
+    color: var(--text);
 }
 
 h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
@@ -116,11 +116,12 @@ h4 { font-size: 1.1rem; }
 }
 
 .navbar.scrolled {
-    background: rgba(10, 10, 15, 0.9);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
     padding: 10px 0;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
 }
 
 .nav-container {
@@ -140,7 +141,7 @@ h4 { font-size: 1.1rem; }
 }
 
 .logo-nxt {
-    color: #fff;
+    color: var(--text);
 }
 
 .logo-gen {
@@ -175,7 +176,7 @@ h4 { font-size: 1.1rem; }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #fff;
+    color: var(--text);
 }
 
 .nav-links a.active::after {
@@ -203,7 +204,7 @@ h4 { font-size: 1.1rem; }
     display: block;
     width: 24px;
     height: 2px;
-    background: #fff;
+    background: var(--text);
     border-radius: 2px;
     transition: all var(--transition);
 }
@@ -264,24 +265,24 @@ h4 { font-size: 1.1rem; }
 
 .btn-white {
     background: #fff;
-    color: var(--bg);
+    color: #1e1e2e;
 }
 
 .btn-white:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
-    color: var(--bg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    color: #1e1e2e;
 }
 
 .btn-outline-white {
     background: transparent;
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .btn-outline-white:hover {
     border-color: #fff;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     color: #fff;
 }
 
@@ -331,10 +332,10 @@ h4 { font-size: 1.1rem; }
 .section-tag {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(99, 102, 241, 0.1);
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    background: rgba(79, 70, 229, 0.08);
+    border: 1px solid rgba(79, 70, 229, 0.15);
     border-radius: 100px;
-    color: var(--primary-light);
+    color: var(--primary);
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -367,17 +368,21 @@ h4 { font-size: 1.1rem; }
     transition: all var(--transition);
 }
 
+.card {
+    box-shadow: var(--shadow);
+}
+
 .card:hover {
     border-color: var(--border-light);
     background: var(--bg-card-hover);
     transform: translateY(-4px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-lg);
 }
 
 .card-icon {
     width: 48px;
     height: 48px;
-    color: var(--primary-light);
+    color: var(--primary);
     margin-bottom: 20px;
 }
 
@@ -454,6 +459,7 @@ h4 { font-size: 1.1rem; }
     margin-bottom: 16px;
     position: relative;
     z-index: 1;
+    color: #fff;
 }
 
 .cta-box p {
@@ -522,7 +528,7 @@ h4 { font-size: 1.1rem; }
 }
 
 .footer-links a:hover {
-    color: var(--primary-light);
+    color: var(--primary);
 }
 
 .footer-bottom {
@@ -547,17 +553,17 @@ h4 { font-size: 1.1rem; }
 .hero-gradient {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 20%, rgba(99, 102, 241, 0.15), transparent),
-                radial-gradient(ellipse 60% 50% at 80% 50%, rgba(6, 182, 212, 0.1), transparent),
-                radial-gradient(ellipse 50% 40% at 20% 60%, rgba(168, 85, 247, 0.08), transparent);
+    background: radial-gradient(ellipse 80% 60% at 50% 20%, rgba(79, 70, 229, 0.07), transparent),
+                radial-gradient(ellipse 60% 50% at 80% 50%, rgba(8, 145, 178, 0.05), transparent),
+                radial-gradient(ellipse 50% 40% at 20% 60%, rgba(147, 51, 234, 0.04), transparent);
 }
 
 .hero-grid {
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent);
     -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent);

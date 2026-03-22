@@ -33,7 +33,7 @@
     border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
     transition: transform var(--transition);
 }
 
@@ -90,8 +90,8 @@
 .mockup-tag {
     display: inline-block;
     padding: 4px 12px;
-    background: rgba(99, 102, 241, 0.15);
-    color: var(--primary-light);
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--primary);
     border-radius: 100px;
     font-size: 0.7rem;
     font-weight: 600;
@@ -145,7 +145,7 @@
     height: 16px;
     background: var(--accent);
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(6, 182, 212, 0.4);
+    box-shadow: 0 0 12px rgba(8, 145, 178, 0.3);
 }
 
 .trase-node.n1 { top: 10%; left: 20%; }
@@ -157,7 +157,7 @@
 .trase-line {
     position: absolute;
     height: 2px;
-    background: rgba(6, 182, 212, 0.3);
+    background: rgba(8, 145, 178, 0.2);
     transform-origin: left center;
 }
 
@@ -202,7 +202,7 @@
     object-fit: cover;
     object-position: top center;
     margin-bottom: 16px;
-    border: 2px solid var(--border-light);
+    border: 2px solid var(--border);
 }
 
 .hj-content h3 {
@@ -220,7 +220,7 @@
     width: 100px;
     height: auto;
     border-radius: 4px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
 /* --- Portfolio Info --- */
@@ -233,8 +233,8 @@
 
 .portfolio-type {
     padding: 4px 12px;
-    background: rgba(99, 102, 241, 0.1);
-    color: var(--primary-light);
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--primary);
     border-radius: 100px;
     font-size: 0.75rem;
     font-weight: 600;
@@ -252,12 +252,12 @@
 }
 
 .portfolio-status.live {
-    background: rgba(16, 185, 129, 0.12);
-    color: var(--green-light);
+    background: rgba(5, 150, 105, 0.08);
+    color: var(--green);
 }
 
 .portfolio-status.archived {
-    background: rgba(152, 152, 176, 0.12);
+    background: rgba(139, 142, 168, 0.1);
     color: var(--text-dim);
 }
 
@@ -289,7 +289,7 @@
 
 .ps strong {
     display: block;
-    color: #fff;
+    color: var(--text);
     font-size: 0.95rem;
     margin-bottom: 2px;
 }
@@ -330,10 +330,14 @@
     transition: all var(--transition);
 }
 
+.partner-detail-card {
+    box-shadow: var(--shadow);
+}
+
 .partner-detail-card:hover {
     border-color: var(--border-light);
     transform: translateY(-4px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-lg);
 }
 
 .partner-detail-card h3 {

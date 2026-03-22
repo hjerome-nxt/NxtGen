@@ -16,19 +16,20 @@
     padding: 48px 36px;
     text-align: center;
     transition: all var(--transition);
+    box-shadow: var(--shadow);
 }
 
 .col-card:hover {
     border-color: var(--border-light);
     transform: translateY(-4px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-lg);
 }
 
 .col-card-icon {
     width: 56px;
     height: 56px;
     margin: 0 auto 24px;
-    color: var(--primary-light);
+    color: var(--primary);
 }
 
 .col-card h3 {
@@ -84,7 +85,7 @@
 
 .timeline-item:hover .timeline-marker {
     background: var(--primary);
-    box-shadow: 0 0 12px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 12px rgba(79, 70, 229, 0.3);
 }
 
 .timeline-content {
@@ -95,16 +96,20 @@
     transition: all var(--transition);
 }
 
+.timeline-content {
+    box-shadow: var(--shadow);
+}
+
 .timeline-content:hover {
     border-color: var(--border-light);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-lg);
 }
 
 .timeline-date {
     display: inline-block;
     padding: 4px 12px;
-    background: rgba(99, 102, 241, 0.1);
-    color: var(--primary-light);
+    background: rgba(79, 70, 229, 0.06);
+    color: var(--primary);
     border-radius: 100px;
     font-size: 0.75rem;
     font-weight: 600;
@@ -136,21 +141,7 @@
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     padding: 48px;
-}
-
-.leader-avatar-placeholder {
-    width: 200px;
-    height: 200px;
-    background: var(--gradient-1);
-    border-radius: var(--radius);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-display);
-    font-size: 4rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 auto;
+    box-shadow: var(--shadow);
 }
 
 .leader-info h3 {
@@ -160,7 +151,7 @@
 
 .leader-title {
     display: inline-block;
-    color: var(--primary-light);
+    color: var(--primary);
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -215,7 +206,7 @@
     top: 8px;
     width: 6px;
     height: 6px;
-    background: var(--primary-light);
+    background: var(--primary);
     border-radius: 50%;
 }
 
@@ -240,7 +231,7 @@
     width: 90px;
     height: auto;
     border-radius: 4px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     flex-shrink: 0;
 }
 
@@ -251,7 +242,7 @@
 }
 
 .book-details strong {
-    color: #fff;
+    color: var(--text);
     font-size: 0.9rem;
 }
 
@@ -298,10 +289,14 @@
     overflow: hidden;
 }
 
+.value-card {
+    box-shadow: var(--shadow);
+}
+
 .value-card:hover {
     border-color: var(--border-light);
     transform: translateY(-4px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-lg);
 }
 
 .value-number {
