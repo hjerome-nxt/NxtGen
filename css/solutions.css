@@ -521,6 +521,295 @@
     font-size: 1.2rem;
 }
 
+/* --- My Safe Spaces App Badge --- */
+.solution-badge.app {
+    background: rgba(225, 29, 72, 0.08);
+    color: var(--rose);
+    border: 1px solid rgba(225, 29, 72, 0.15);
+}
+
+/* --- App Store Buttons --- */
+.app-store-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.app-store-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: all var(--transition);
+    border: 1px solid var(--border);
+    background: var(--text);
+    color: #fff;
+}
+
+.app-store-btn svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.app-store-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    color: #fff;
+    border-color: var(--text);
+}
+
+.app-store-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.app-store-small {
+    font-size: 0.6rem;
+    font-weight: 400;
+    opacity: 0.85;
+    letter-spacing: 0.3px;
+}
+
+.app-store-large {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.mss-web-link {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color var(--transition);
+}
+
+.mss-web-link:hover {
+    color: var(--accent);
+}
+
+/* --- Phone Mockup --- */
+.app-phone-mockup {
+    display: flex;
+    justify-content: center;
+}
+
+.phone-frame {
+    position: relative;
+    width: 280px;
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 36px;
+    padding: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.10), 0 0 0 1px var(--border);
+}
+
+.phone-notch {
+    width: 100px;
+    height: 24px;
+    background: var(--bg-card);
+    border-radius: 0 0 16px 16px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    border: 2px solid var(--border);
+    border-top: none;
+}
+
+.phone-screen {
+    background: var(--bg-alt);
+    border-radius: 24px;
+    padding: 20px 16px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: -12px;
+}
+
+.app-screen-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.app-logo-mark {
+    width: 28px;
+    height: 28px;
+    color: var(--rose);
+}
+
+.app-screen-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text);
+}
+
+.app-screen-status {
+    margin-left: auto;
+    font-size: 0.65rem;
+    color: var(--green);
+    font-weight: 500;
+}
+
+.app-screen-greeting {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.app-greeting-hi {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.app-greeting-sub {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Mood Selector */
+.app-mood-row {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.app-mood {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    flex: 1;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.app-mood span {
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    font-weight: 500;
+}
+
+.app-mood.active {
+    border-color: var(--primary);
+    background: rgba(79, 70, 229, 0.06);
+}
+
+.app-mood.active span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Quick Actions */
+.app-quick-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.app-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.app-action:hover {
+    border-color: var(--border-light);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.app-action-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.app-action-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.app-action-icon.chat-icon {
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--primary);
+}
+
+.app-action-icon.breathe-icon {
+    background: rgba(8, 145, 178, 0.08);
+    color: var(--accent);
+}
+
+.app-action-icon.journal-icon {
+    background: rgba(5, 150, 105, 0.08);
+    color: var(--green);
+}
+
+.app-action-icon.sos-icon {
+    background: rgba(225, 29, 72, 0.08);
+    color: var(--rose);
+}
+
+.app-action span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* Streak Bar */
+.app-streak-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.app-streak-dots {
+    display: flex;
+    gap: 4px;
+}
+
+.app-streak-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    display: inline-block;
+    font-style: normal;
+}
+
+.app-streak-dots .dot.filled {
+    background: var(--green);
+}
+
 /* --- Responsive --- */
 @media (max-width: 968px) {
     .solution-block,
@@ -536,5 +825,21 @@
 
     .solution-metrics {
         justify-content: flex-start;
+    }
+
+    .phone-frame {
+        width: 260px;
+    }
+
+    .phone-screen {
+        min-height: 380px;
+    }
+
+    .app-store-buttons {
+        flex-direction: column;
+    }
+
+    .app-store-btn {
+        justify-content: center;
     }
 }
